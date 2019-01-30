@@ -1,0 +1,778 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* ボックス中央寄せ設定 */
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  min-width: 1280px;
+  min-height: 590px;
+}
+
+
+/* 基本画面サイズ設定 */
+#app{
+  margin: -295px 0 0 -640px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1280px;
+  height: 590px;
+}
+
+/* class：position absolute */
+.layer{
+  position: absolute;
+}
+
+/* スタート画面 */
+.first-screen{
+  margin: -295px 0 0 -640px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1280px;
+  height: 590px;
+  background-image: url(images/background@2x.png);
+  background-size: 1280px 590px;
+  background-color: black;
+}
+
+/* タイトルロゴ */
+#logo{
+  z-index: 3;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+/* スタートボタン */
+#btn-start{
+  z-index: 6;
+  top:400px;
+  right:300px;
+  width:300px;
+  padding: 3px;
+  text-decoration: none;
+  background: #668ad8;
+  color: #FFF;
+  font-size: 24px;
+  border-radius: 4px;
+  box-shadow: 0px 0px 15px 6px#c9d5f0;
+  border: double 2px #FFF;
+  opacity: 0.7;
+  transition: 300ms;
+}
+
+#btn-start:hover{
+  opacity: 0.9;
+}
+
+
+
+/* コピーライト文字設定 */
+#copyright{
+  text-align: right;
+  bottom: 30px;
+  right:100px;
+  font-size:14px;
+}
+
+
+/********リザルト画面消去********/
+
+/* .result-screen,
+.result{
+  display: none;
+} */
+
+/*******************************/
+
+/* リザルト画面 */
+.result-screen{
+  margin: -295px 0 0 -640px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 1280px;
+  height: 590px;
+  background: linear-gradient(rgba(255, 255, 255,0.1) 40%, rgba(187, 144, 53, 0.384) 70%, rgba(0, 0, 0, 0.863)), url(images/background@2x.png) center bottom / cover no-repeat;
+  background-size: 1280px 590px;
+  background-color: black;
+}
+
+/* キャラクターネーム */
+.name{
+  top: 0px;
+  left: 30px;
+  z-index: 3;
+}
+
+/* くじ表示 */
+.omikuji{
+  top: 5px;
+  right: 80px;
+  z-index: 3;
+  filter: drop-shadow(0px 10px 5px rgba(156, 102, 19, 0.781));
+}
+
+/* 小タイトルロゴ */
+.slogo{
+  right:60px;
+  top:400px;
+  z-index: 3;
+}
+
+
+/* テキスト設定 */
+#text{
+  bottom:120px;
+  left:38%;
+  color: rgb(254, 255, 251);
+  font-size: 34px;
+  font-family: "Nico Moji";
+  z-index: 4;
+  text-shadow: rgb(255, 0, 0) 1px 1px 0px, rgb(255, 0, 0) -1px 1px 0px,
+  rgb(255, 0, 0) 1px -1px 0px, rgb(255, 0, 0) -1px -1px 0px;
+  filter: drop-shadow(10px 10px 10px rgba(153, 47, 47, 0.6));
+}
+
+/* テキストエリア */
+.textarea{
+  width: 750px;
+  height: 100px;
+  top: 470px;
+  left: 80px;
+  background:#686AB7;
+  color: #fff;
+  font-size: 32px;
+  font-family: "Nico Moji";
+  border-radius: 10px;
+  padding: 3px 50px;
+  box-sizing: border-box;
+  opacity: 0.8;
+  border: solid;
+  z-index: 2;
+}
+.textarea2{
+  width: 300px;
+  height: 70px;
+  top: 330px;
+  right: 420px;
+  background:rgb(240, 121, 92);
+  color: #fff;
+  font-size: 20px;
+  font-family: "Nico Moji";
+  border-radius: 5px;
+  padding: 5px 20px;
+  box-sizing: border-box;
+  border: double;
+  opacity: 0.9;
+  z-index: 2;
+}
+
+/*バックボタン*/
+#btn-back{
+  position: absolute;
+  bottom:40px;
+  right: 80px;
+  width:100px;
+  display: none;
+  font-size: 30px;
+  padding: 1rem 1rem;
+  border-radius: 50px;
+  border: double;
+  font-family: "Nico Moji";
+  background: #4e4e5fec;
+  color: #fff;
+  z-index: 5;
+}
+
+/*イロハ*/
+.charactor1{
+  z-index: 1;
+  top:-5px;
+  left:80px;
+  height: 590px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 0%;
+  filter: drop-shadow(-5px -5px 15px rgba(151, 151, 5, 0.644));
+}
+.name{
+  top: 0px;
+  left: 30px;
+  z-index: 3;
+}
+
+/* リリゼット*/
+.charactor2{
+  z-index: 1;
+  top:8px;
+  left:53px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 0%;
+  filter: drop-shadow(-5px -5px 15px rgba(151, 151, 5, 0.644));
+}
+.name2{
+  top: 0px;
+  left: 350px;
+  z-index: 3;
+}
+
+/*ライオン*/
+.charactor3{
+  z-index: 1;
+  top:0px;
+  left:53px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 0%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*プリッシュ*/
+.charactor4{
+  z-index: 1;
+  top:5px;
+  left:110px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 0%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*アシェラ*/
+.charactor5{
+  z-index: 1;
+  top:-10px;
+  left:0px;
+  height: 590px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 0%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*ナシュメラ*/
+.charactor6{
+  z-index: 1;
+  top:0px;
+  left:160px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 0%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+.name3{
+  top: 0px;
+  left: 30px;
+  width:380px;
+  z-index: 3;
+}
+
+/*シャントット*/
+.charactor7{
+  z-index: 1;
+  top:25px;
+  left:250px;
+  height: 560px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 0%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*トリオン*/
+.charactor8{
+  z-index: 1;
+  top:5px;
+  left:70px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*ウルミア*/
+.charactor9{
+  z-index: 1;
+  top:0px;
+  left:30px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+.name4{
+  top: 0px;
+  left: 450px;
+  z-index: 3;
+}
+
+/*アジドマルジド*/
+.charactor10{
+  z-index: 1;
+  top:0px;
+  left:-50px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+.name5{
+  top: 0px;
+  left: 260px;
+  width:500px;
+  z-index: 3;
+}
+
+/*アプルル*/
+.charactor11{
+  z-index: 1;
+  top:0px;
+  left:200px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*クリルラ*/
+.charactor12{
+  z-index: 1;
+  top:3px;
+  left:53px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*クピピ*/
+.charactor13{
+  z-index: 1;
+  top:3px;
+  left:250px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*アヤメ*/
+.charactor14{
+  z-index: 1;
+  top:3px;
+  left:230px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*アルド*/
+.charactor15{
+  z-index: 1;
+  top:3px;
+  left:100px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*ザイド*/
+.charactor16{
+  z-index: 1;
+  top:3px;
+  left:100px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*セルテウス*/
+.charactor17{
+  z-index: 1;
+  top:3px;
+  left:150px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*テンゼン*/
+.charactor18{
+  z-index: 1;
+  top:3px;
+  left:50px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*ルザフ*/
+.charactor19{
+  z-index: 1;
+  top:3px;
+  left:80px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*ホシノミコ*/
+.charactor20{
+  z-index: 1;
+  top:3px;
+  left:90px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*カルハバルハ*/
+.charactor21{
+  z-index: 1;
+  top:3px;
+  left:200px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+.name6{
+  top: -20px;
+  left: 30px;
+  width:500px;
+  z-index: 3;
+}
+
+/*あさづけ*/
+.charactor22{
+  z-index: 1;
+  top:3px;
+  left:55px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*EV*/
+.charactor23{
+  z-index: 1;
+  top:3px;
+  left:150px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+.name7{
+  top: 0px;
+  left: 380px;
+  width:380px;
+  z-index: 3;
+}
+
+
+/*HM*/
+.charactor24{
+  z-index: 1;
+  top:3px;
+  left:80px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*TT*/
+.charactor25{
+  z-index: 1;
+  top:3px;
+  left:53px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*MR*/
+.charactor26{
+  z-index: 1;
+  top:3px;
+  left:25px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*GK*/
+.charactor27{
+  z-index: 1;
+  top:3px;
+  left:55px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*エグセニミル*/
+.charactor28{
+  z-index: 1;
+  top:3px;
+  left:255px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*ロベルアクベル*/
+.charactor29{
+  z-index: 1;
+  top:3px;
+  left:255px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*ゲッショー*/
+.charactor30{
+  z-index: 1;
+  top:3px;
+  left:150px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*ナジ*/
+.charactor31{
+  z-index: 1;
+  top:3px;
+  left:50px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*ナナーミーゴ*/
+.charactor32{
+  z-index: 1;
+  top:3px;
+  left:150px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*ユグナス*/
+.charactor33{
+  z-index: 1;
+  top:3px;
+  left:250px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*ミルドリオン*/
+.charactor34{
+  z-index: 1;
+  top:3px;
+  left:90px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*ルガジーン*/
+.charactor35{
+  z-index: 1;
+  top:3px;
+  left:0px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*ザザーグ*/
+.charactor36{
+  z-index: 1;
+  top:3px;
+  left:150px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*ミリアリアポー*/
+.charactor37{
+  z-index: 1;
+  top:3px;
+  left:52px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+.name8{
+  top: 30px;
+  left: 30px;
+  width:400px;
+  z-index: 3;
+}
+
+/*ガダラル*/
+.charactor38{
+  z-index: 1;
+  top:0px;
+  left:54px;
+  height: 580px;
+  width:650px;
+  object-fit: none;
+  object-position: 100% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+
+/*ナジェリス*/
+.charactor39{
+  z-index: 1;
+  top:3px;
+  left:10px;
+  height: 580px;
+  width:1000px;
+  object-fit: none;
+  object-position: 0% 100%;
+  filter: drop-shadow(-5px -5px 5px rgba(151, 151, 5, 0.644));
+}
+.name9{
+  top: -20px;
+  left: 400px;
+  z-index: 3;
+}
+
+
+
+
+
+
+
+/* アニメーション設定 */
+.fuwafuwa {
+  animation:fuwafuwa 2s infinite ease-in-out alternate;
+}
+
+@keyframes fuwafuwa {
+  0% {transform:translate(-50%,0);}
+  50% {transform:translate(-50%,-10px);}
+  100% {transform:translate(-50%,0);}
+}
+
+.furiko{
+  animation: furiko 2s infinite ease-in-out alternate;
+}
+
+@keyframes furiko {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(0.5deg); }
+}
+
+#slide{
+  width: 1280px;
+  height: 0;
+  background: #E8556A;
+  z-index: 5;
+  left: 0;
+  bottom: 0;
+  transition: 500ms;
+}
+
+.open{
+  height: 800px !important;
+}
+
+.close{
+  top: 0 !important;
+  left: 0 !important;
+  height: 0 !important;
+}
+
+#loading{
+  width: 100%;
+  top: 45%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #E8556A;
+  z-index: 5;
+  font-size: 72px;
+  font-family: "Nico Moji";
+}
+
+

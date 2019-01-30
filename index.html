@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+  <link rel="stylesheet" href="animate.css">
+  <title>Document</title>
+</head>
+<body>
+    <div id="app" class="centerMiddle">
+
+        <!-- <div class="first-screen layer">
+            <img id="start-charactor" class="layer furiko" src="images/asazuke.png" srcset="images/asazuke.png 1x,images/asazuke@2x.png 2x">
+            <img id="logo" class="layer fuwafuwa" src="images/logo.png" srcset="images/logo.png 1x,images/logo@2x.png 2x">
+            <button id="btn-start" class="layer furiko">
+                <p>開始</p>
+            </button>
+            <p id="copyright" class="layer">ファイナルファンタジーXI 記載されている会社名・製品名・システム名などは、各社の商標、または登録商標です。<br>
+              Copyright (C) 2002 - 2018 SQUARE ENIX CO., LTD. All Rights Reserved.</p>
+        </div> -->
+        
+        <div class="result-screen">
+<!-- 
+            <div id="result-1" class="result">
+                <img class="charactor1 layer" src="images/1.png" src="images/1.png 1x,images/1@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/daikiti.png" src="images/daikiti.png 1x,images/daikiti@2x.png 2x">
+                <img class="name layer" src="images/1n.png" src="images/1n.png 1x,images/1n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">いざ、共に参らん！！</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：イロハ<br>
+                    うんせい　　：★★★★★
+                </p>
+            </div>
+        
+            <div id="result-2" class="result">
+                <img class="charactor2 layer" src="images/2.png" src="images/2.png 1x,images/2@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/daikiti.png" src="images/daikiti.png 1x,images/daikiti@2x.png 2x">
+                <img class="name2 layer" src="images/2n.png" src="images/2n.png 1x,images/2n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">スペシャル・ダブル・アクト・ステージのはじまりよ！</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：リリゼット<br>
+                    うんせい　　：★★★★★
+                </p>
+            </div>  
+
+            <div id="result-3" class="result">
+                <img class="charactor3 layer" src="images/3.png" src="images/3.png 1x,images/3@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/daikiti.png" src="images/daikiti.png 1x,images/daikiti@2x.png 2x">
+                <img class="name layer" src="images/3n.png" src="images/3.png 1x,images/3n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">大丈夫。クリスタルが力を貸してくれる！</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：ライオン<br>
+                    うんせい　　：★★★★★
+                </p>
+            </div>
+
+            <div id="result-4" class="result">
+                    <img class="charactor4 layer" src="images/4.png" src="images/4.png 1x,images/4@2x.png 2x">
+                    <img class="omikuji layer furiko" src="images/daikiti.png" src="images/daikiti.png 1x,images/daikiti@2x.png 2x">
+                    <img class="name layer" src="images/4n.png" src="images/4n.png 1x,images/4n@2x.png 2x">
+                    <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                    <p class="textarea layer">よっしゃあああああああああああああああ！<br>爆っぜろぉお！！</p>
+                    <p class="textarea2 layer furiko">
+                        運命ふぇいす：プリッシュ<br>
+                        うんせい　　：★★★★★
+                    </p>
+            </div>
+
+            <div id="result-5" class="result">
+                    <img class="charactor5 layer" src="images/5.png" src="images/5.png 1x,images/5@2x.png 2x">
+                    <img class="omikuji layer furiko" src="images/daikiti.png" src="images/daikiti.png 1x,images/daikiti@2x.png 2x">
+                    <img class="name layer" src="images/5n.png" src="images/5n.png 1x,images/5n@2x.png 2x">
+                    <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                    <p class="textarea layer">いつかゆっくり、<br>スィーツのお話で盛り上がりましょうね♪</p>
+                    <p class="textarea2 layer furiko">
+                        運命ふぇいす：アシェラ<br>
+                        うんせい　　：★★★★★
+                    </p>
+            </div>
+
+            <div id="result-6" class="result">
+                    <img class="charactor6 layer" src="images/6.png" src="images/6.png 1x,images/6@2x.png 2x">
+                    <img class="omikuji layer furiko" src="images/daikiti.png" src="images/daikiti.png 1x,images/daikiti@2x.png 2x">
+                    <img class="name3 layer" src="images/6n.png" src="images/6n.png 1x,images/6n@2x.png 2x">
+                    <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                    <p class="textarea layer">いつかゆっくり、<br>スィーツのお話で盛り上がりましょうね♪</p>
+                    <p class="textarea2 layer furiko">
+                        運命ふぇいす：ナシュメラ<br>
+                        うんせい　　：★★★★★
+                    </p>
+            </div>
+
+            <div id="result-7" class="result">
+                <img class="charactor7 layer" src="images/7.png" src="images/7.png 1x,images/7@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/daikiti.png" src="images/daikiti.png 1x,images/daikiti@2x.png 2x">
+                <img class="name3 layer" src="images/7n.png" src="images/7n.png 1x,images/7n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">オーッホホホホホ！　なんて他愛ないんでしょう！</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：シャントット<br>
+                    うんせい　　：？？？？？
+                </p>
+            </div>
+
+            <div id="result-8" class="result">
+                <img class="charactor8 layer" src="images/8.png" src="images/8.png 1x,images/8@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/cyukiti.png" src="images/cyukiti.png 1x,images/cyukiti@2x.png 2x">
+                <img class="name layer" src="images/8n.png" src="images/8n.png 1x,images/8n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">この戦い、全力でのぞむことを誓おう！ </p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：トリオン<br>
+                    うんせい　　：★★★★
+                </p>
+            </div>
+
+            <div id="result-9" class="result">
+                <img class="charactor9 layer" src="images/9.png" src="images/9.png 1x,images/9@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/cyukiti.png" src="images/cyukiti.png 1x,images/cyukiti@2x.png 2x">
+                <img class="name4 layer" src="images/9n.png" src="images/9n.png 1x,images/9n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">もっと歌いたい。世界を歌いたい。</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：ウルミア<br>
+                    うんせい　　：★★★★
+                </p>
+            </div>
+
+            <div id="result-10" class="result">
+                <img class="charactor10 layer" src="images/10.png" src="images/10.png 1x,images/10@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/cyukiti.png" src="images/cyukiti.png 1x,images/cyukiti@2x.png 2x">
+                <img class="name5 layer" src="images/10n.png" src="images/10n.png 1x,images/10n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">天才はいつの世でも、<br>なかなか認められないものさ。</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：アジドマルジド<br>
+                    うんせい　　：★★★★
+                </p>
+            </div>
+
+            <div id="result-11" class="result">
+                <img class="charactor11 layer" src="images/11.png" src="images/11.png 1x,images/11@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/cyukiti.png" src="images/cyukiti.png 1x,images/cyukiti@2x.png 2x">
+                <img class="name3 layer" src="images/11n.png" src="images/11n.png 1x,images/11n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">冒険者さん、聞いたわ！　あなたの大活躍！</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：アプルル<br>
+                    うんせい　　：★★★★
+                </p>
+            </div>
+
+            <div id="result-12" class="result">
+                <img class="charactor12 layer" src="images/12.png" src="images/12.png 1x,images/12@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/cyukiti.png" src="images/cyukiti.png 1x,images/cyukiti@2x.png 2x">
+                <img class="name layer" src="images/12n.png" src="images/12n.png 1x,images/12n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">鷲獅子は兎を狩るのにも全力を尽くす！</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：クリルラ<br>
+                    うんせい　　：★★★★
+                </p>
+            </div>
+
+            <div id="result-13" class="result">
+                <img class="charactor13 layer" src="images/13.png" src="images/13.png 1x,images/13@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/cyukiti.png" src="images/cyukiti.png 1x,images/cyukiti@2x.png 2x">
+                <img class="name layer" src="images/13n.png" src="images/13n.png 1x,images/13n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">書記官クピピにお任せなのなの！</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：クピピ<br>
+                    うんせい　　：★★★★
+                </p>
+            </div>
+
+            <div id="result-14" class="result">
+                <img class="charactor14 layer" src="images/14.png" src="images/14.png 1x,images/14@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/cyukiti.png" src="images/cyukiti.png 1x,images/cyukiti@2x.png 2x">
+                <img class="name layer" src="images/14n.png" src="images/14n.png 1x,images/14n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">道を極めるための、近道はありません……。</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：アヤメ<br>
+                    うんせい　　：★★★★
+                </p>
+            </div>
+
+            <div id="result-15" class="result">
+                <img class="charactor15 layer" src="images/15.png" src="images/15.png 1x,images/15@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/cyukiti.png" src="images/cyukiti.png 1x,images/cyukiti@2x.png 2x">
+                <img class="name layer" src="images/15n.png" src="images/15n.png 1x,images/15n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">ちっぽけな生命の、<br>でっかい意地ってのを見せてやるぜ！</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：アルド<br>
+                    うんせい　　：★★★★
+                </p>
+            </div>
+
+            <div id="result-16" class="result">
+                <img class="charactor16 layer" src="images/16.png" src="images/16.png 1x,images/16@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/cyukiti.png" src="images/cyukiti.png 1x,images/cyukiti@2x.png 2x">
+                <img class="name layer" src="images/16n.png" src="images/16n.png 1x,images/16n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">悪いが、おまえの戦いに便乗させてもらうぞ。</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：ザイド<br>
+                    うんせい　　：★★★★
+                </p>
+            </div>
+
+            <div id="result-18" class="result">
+                <img class="charactor18 layer" src="images/18.png" src="images/18.png 1x,images/18@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/cyukiti.png" src="images/cyukiti.png 1x,images/cyukiti@2x.png 2x">
+                <img class="name layer" src="images/18n.png" src="images/18n.png 1x,images/18n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">我輩の名はテンゼン。いざ、参る！</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：テンゼン<br>
+                    うんせい　　：★★★★
+                </p>
+            </div>
+
+            <div id="result-19" class="result">
+                <img class="charactor19 layer" src="images/19.png" src="images/19.png 1x,images/19@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/cyukiti.png" src="images/cyukiti.png 1x,images/cyukiti@2x.png 2x">
+                <img class="name layer" src="images/19n.png" src="images/19n.png 1x,images/19n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">漆黒のルザフの名、伊達ではないぞ。</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：ルザフ<br>
+                    うんせい　　：★★★★
+                </p>
+            </div>
+
+            <div id="result-20" class="result">
+                <img class="charactor20 layer" src="images/20.png" src="images/20.png 1x,images/20@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/cyukiti.png" src="images/cyukiti.png 1x,images/cyukiti@2x.png 2x">
+                <img class="name2 layer" src="images/20n.png" src="images/20n.png 1x,images/20n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">星々よ……教えて……。</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：ほしのみこ<br>
+                    うんせい　　：★★★★
+                </p>
+            </div>
+
+            <div id="result-21" class="result">
+                <img class="charactor21 layer" src="images/21.png" src="images/21.png 1x,images/21@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/cyukiti.png" src="images/cyukiti.png 1x,images/cyukiti@2x.png 2x">
+                <img class="name6 layer" src="images/21n.png" src="images/21n.png 1x,images/21n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">……やぁ。みんな久しぶりだね。</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：カラハバルハ<br>
+                    うんせい　　：★★★★
+                </p>
+            </div>
+
+            <div id="result-22" class="result">
+                <img class="charactor22 layer" src="images/22.png" src="images/22.png 1x,images/22@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/syokiti.png" src="images/syokiti.png 1x,images/syokiti@2x.png 2x">
+                <img class="name2 layer" src="images/22n.png" src="images/22n.png 1x,images/22n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">うひょ～～～～～～～</p>
+                <p class="textarea2 layer furiko">
+                    運命<s>ふぇいす</s>：あさづけ<br>
+                    うんせい　　：★★★
+                </p>
+            </div>
+
+            <div id="result-23" class="result">
+                <img class="charactor23 layer" src="images/23.png" src="images/23.png 1x,images/23@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/syokiti.png" src="images/syokiti.png 1x,images/syokiti@2x.png 2x">
+                <img class="name7 layer" src="images/23n.png" src="images/23n.png 1x,images/23n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">..!?</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：EV<br>
+                    うんせい　　：★★★
+                </p>
+            </div>
+
+            <div id="result-24" class="result">
+                <img class="charactor24 layer" src="images/24.png" src="images/24.png 1x,images/24@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/syokiti.png" src="images/syokiti.png 1x,images/syokiti@2x.png 2x">
+                <img class="name7 layer" src="images/24n.png" src="images/24n.png 1x,images/24n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">..!?</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：HM<br>
+                    うんせい　　：★★★
+                </p>
+            </div>
+
+            <div id="result-25" class="result">
+                <img class="charactor25 layer" src="images/25.png" src="images/25.png 1x,images/25@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/syokiti.png" src="images/syokiti.png 1x,images/syokiti@2x.png 2x">
+                <img class="name7 layer" src="images/25n.png" src="images/25n.png 1x,images/25n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">..!?</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：TT<br>
+                    うんせい　　：★★★
+                </p>
+            </div>
+
+            <div id="result-26" class="result">
+                <img class="charactor26 layer" src="images/26.png" src="images/26.png 1x,images/26@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/syokiti.png" src="images/syokiti.png 1x,images/syokiti@2x.png 2x">
+                <img class="name7 layer" src="images/26n.png" src="images/26n.png 1x,images/26n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">..!?</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：MR<br>
+                    うんせい　　：★★★
+                </p>
+            </div>
+
+            <div id="result-27" class="result">
+                <img class="charactor27 layer" src="images/27.png" src="images/27.png 1x,images/27@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/syokiti.png" src="images/syokiti.png 1x,images/syokiti@2x.png 2x">
+                <img class="name3 layer" src="images/27n.png" src="images/27n.png 1x,images/27n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">..!?</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：GK<br>
+                    うんせい　　：★★★
+                </p>
+            </div>
+
+            <div id="result-28" class="result">
+                <img class="charactor28 layer" src="images/28.png" src="images/28.png 1x,images/28@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/syokiti.png" src="images/syokiti.png 1x,images/syokiti@2x.png 2x">
+                <img class="name3 layer" src="images/28n.png" src="images/28n.png 1x,images/28n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">敵の大将を目の前にしてもくじけない、<br>勇気と智略が欲しいんだ！</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：エグセニミル<br>
+                    うんせい　　：★★★
+                </p>
+            </div>
+
+            <div id="result-29" class="result">
+                <img class="charactor29 layer" src="images/29.png" src="images/29.png 1x,images/29@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/syokiti.png" src="images/syokiti.png 1x,images/syokiti@2x.png 2x">
+                <img class="name3 layer" src="images/29n.png" src="images/29n.png 1x,images/29n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">共に、戦おう。人の子の未来のために。</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：ロベルアクベル<br>
+                    うんせい　　：★★★
+                </p>
+            </div>
+
+            <div id="result-30" class="result">
+                <img class="charactor30 layer" src="images/30.png" src="images/30.png 1x,images/30@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/syokiti.png" src="images/syokiti.png 1x,images/syokiti@2x.png 2x">
+                <img class="name layer" src="images/30n.png" src="images/30n.png 1x,images/30n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">社長殿のおかげで、<br>拙者は初めて本当の恐怖を知ったでござる。</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：ゲッショー<br>
+                    うんせい　　：★★★
+                </p>
+            </div>
+
+            <div id="result-31" class="result">
+                <img class="charactor31 layer" src="images/31.png" src="images/31.png 1x,images/31@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/syokiti.png" src="images/syokiti.png 1x,images/syokiti@2x.png 2x">
+                <img class="name layer" src="images/31n.png" src="images/31n.png 1x,images/31n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">いやー、また増えちゃったよ、俺の武勇伝！</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：ナジ<br>
+                    うんせい　　：★★★
+                </p>
+            </div>
+
+            <div id="result-32" class="result">
+                <img class="charactor32 layer" src="images/32.png" src="images/32.png 1x,images/32@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/syokiti.png" src="images/syokiti.png 1x,images/syokiti@2x.png 2x">
+                <img class="name6 layer" src="images/32n.png" src="images/32n.png 1x,images/32n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">なぁにぃ？ あたしと仲良くなりたいのぉ？</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：ナナーミーゴ<br>
+                    うんせい　　：★★★
+                </p>
+            </div>
+
+            <div id="result-33" class="result">
+                <img class="charactor33 layer" src="images/33.png" src="images/33.png 1x,images/33@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/syokiti.png" src="images/syokiti.png 1x,images/syokiti@2x.png 2x">
+                <img class="name layer" src="images/33n.png" src="images/33n.png 1x,images/33n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">グャ！？</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：ユグナス<br>
+                    うんせい　　：★★★
+                </p>
+            </div>
+
+            <div id="result-34" class="result">
+                <img class="charactor34 layer" src="images/34.png" src="images/34.png 1x,images/34@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/syokiti.png" src="images/syokiti.png 1x,images/syokiti@2x.png 2x">
+                <img class="name3 layer" src="images/34n.png" src="images/34n.png 1x,images/34n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">ヴァナ・ディールの、未来のために！</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：ミルドリオン<br>
+                    うんせい　　：★★★
+                </p>
+            </div>
+
+            <div id="result-35" class="result">
+                <img class="charactor35 layer" src="images/35.png" src="images/35.png 1x,images/35@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/syokiti.png" src="images/syokiti.png 1x,images/syokiti@2x.png 2x">
+                <img class="name5 layer" src="images/35n.png" src="images/35n.png 1x,images/35n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">くじけるな、諸君ッ！<br>勝利の女神は我らと共にあるッ！！</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：ルガジーン<br>
+                    うんせい　　：★★★
+                </p>
+            </div>
+
+            <div id="result-36" class="result">
+                <img class="charactor36 layer" src="images/36.png" src="images/36.png 1x,images/36@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/syokiti.png" src="images/syokiti.png 1x,images/syokiti@2x.png 2x">
+                <img class="name layer" src="images/36n.png" src="images/36n.png 1x,images/36n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">オレといっしょに大暴れしようじゃねえか。</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：ザザーグ<br>
+                    うんせい　　：★★★
+                </p>
+            </div>
+
+            <div id="result-37" class="result">
+                <img class="charactor37 layer" src="images/c.png" src="images/c.png 1x,images/c@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/syokiti.png" src="images/syokiti.png 1x,images/syokiti@2x.png 2x">
+                <img class="name8 layer" src="images/n.png" src="images/n.png 1x,images/n@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">ねえねえ、いい加減、ボクも混ぜてよ～ッ！</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：ミリアリアポー<br>
+                    うんせい　　：★★★
+                </p>
+            </div>
+
+            <div id="result-38" class="result">
+                <img class="charactor38 layer" src="images/c-1.png" src="images/c-1.png 1x,images/c-1@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/syokiti.png" src="images/syokiti.png 1x,images/syokiti@2x.png 2x">
+                <img class="name layer" src="images/n-2.png" src="images/n-2.png 1x,images/n-2@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">まとめて灰にしてやるッ！！！</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：ガダラル<br>
+                    うんせい　　：★★★
+                </p>
+            </div>
+-->
+            <div id="result-39" class="result">
+                <img class="charactor39 layer" src="images/c-2.png" src="images/c-2.png 1x,images/c-2@2x.png 2x">
+                <img class="omikuji layer furiko" src="images/syokiti.png" src="images/syokiti.png 1x,images/syokiti@2x.png 2x">
+                <img class="name9 layer" src="images/n-1.png" src="images/n-1.png 1x,images/n-1@2x.png 2x">
+                <img class="slogo layer" src="images/slogo.png" src="images/slogo.png 1x,images/slogo@2x.png 2x">
+                <p class="textarea layer">ナジュリス、助太刀いたします！</p>
+                <p class="textarea2 layer furiko">
+                    運命ふぇいす：ナジェリス<br>
+                    うんせい　　：★★★
+                </p>
+            </div>
+
+
+
+
+
+
+
+            <canvas id="canvas"></canvas>
+        </div>
+        <button id="btn-back">戻る</button>
+        <canvas id="canvas"></canvas>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="omikuji.js"></script>
+    <script src="fubuki.js"></script>
+  
+</body>
+</html>
