@@ -2,7 +2,7 @@ $(function () {
 
   //キャラクター人数分の配列プッシュ
   var omikuji = [];
-  for (let i = 1; i < 2; i++) {
+  for (let i = 1; i < 103; i++) {
     let x = $(`#result-` + i);
     omikuji.push(x);
   };
@@ -36,7 +36,7 @@ $(function () {
       audiokekka.src = "audio/hyoushigi1.mp3";
       audiokekka.volume = 0.1;
       audiokekka.play();
-      var random = 0;//Math.floor(Math.random() * 101);
+      var random = Math.floor(Math.random() * 102);
       console.log(random);
       $(".result-screen").show();
       omikuji[random].show();
