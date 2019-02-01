@@ -37,7 +37,6 @@ $(function () {
       audiokekka.volume = 0.1;
       audiokekka.play();
       var random = Math.floor(Math.random() * 102);
-      console.log(random);
       $(".result-screen").show();
       omikuji[random].show();
       omikuji[random].addClass("animated bounceInUp");
